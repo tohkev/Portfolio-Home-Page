@@ -1,0 +1,52 @@
+.container h1 {
+    text-align: left;
+    padding: 1.5rem 0;
+    text-align: center;
+}
+
+.card {
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+.card-wrapper {
+    justify-content: center;
+    flex-direction: column;
+}
+
+section h2 {
+    font-size: 1.5rem;
+}
+
+i.icon {
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
+}
+
+section.row {
+    align-items: start;
+    padding-left: 2rem;
+}
+
+.map-container {
+    padding: 1.5rem;
+    height: 22rem;
+}
+
+iframe {
+    height:100%;
+    width: 100%;
+}
+
+@media (min-width: 992px) {
+    .card-wrapper {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    aside.card {
+        width: 40%;
+    }
+    main.card {
+        width: 55%;
+    }
+}

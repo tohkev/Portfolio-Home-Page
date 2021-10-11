@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script defer src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="FontAwesome/css/all.css">
+    <link rel="stylesheet" href="css/main-styles.css">
+    <link rel="stylesheet" href="css/contact-styles.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Kevin Toh</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Portfolio
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Random Quote Generator</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Travels</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Contact</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <button class="btn btn-light my-2 my-sm-0" type="submit">Download My Resume</button>
+            </form>
+        </div>
+    </nav>
+    <div class="container">
+        <h1>Contact Me!</h1>
+        <div class="row card-wrapper">
+            <aside class="card">
+                <div class="card-body container">
+                    <section class="row flex-nowrap">
+                        <i class=" fas fa-map-marker-alt icon"></i>
+                        <article class="info">
+                            <h2>Location:</h2>
+                            <p>1570 E Colorado Blvd, Pasadena, CA 91106</p>
+                        </article>
+                    </section>
+                    <section class="row">
+                        <i class="far fa-envelope icon"></i>
+                        <article class="info">
+                            <h2>Email:</h2>
+                            <p>ktoh@go.pasadena.edu</p>
+                        </article>
+                    </section>
+                    <section class="row">
+                        <i class="fas fa-phone-alt icon"></i>
+                        <article class="info">
+                            <h2>Call:</h2>
+                            <p>(111) 111-1111</p>
+                        </article>
+                    </section>
+                </div>
+                <div class="container map-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3302.0915624068507!2d-118.12038738447009!3d34.14399952033582!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c35157933d6d%3A0xde628ce19b0ac3f7!2sPasadena%20City%20College!5e0!3m2!1sen!2sus!4v1633911761406!5m2!1sen!2sus"
+                        style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </aside>
+
+            <main class="card">
+                <div class="card-body">
+                    <div class="container">
+                        <form>
+                            <div class="form-group">
+                                <label for="your-name">Name</label>
+                                <input type="text" class="form-control" id="your-name" placeholder="Your Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="email-contact">Email address</label>
+                                <input type="email" class="form-control" id="email-contact"
+                                    placeholder="name@example.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="subject-line">Subject</label>
+                                <input type="text" class="form-control" id="subject-line" placeholder="Subject Line">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleFormControlTextarea1">Message</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="15"
+                                    placeholder="Write Your Message Here!"></textarea>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </main>
+
+
+        </div>
+    </div>
+</body>
+
+</html>
