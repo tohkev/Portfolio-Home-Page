@@ -26,7 +26,7 @@ body {
     margin: 3px;
 }
 .home-buttons {
-    margin-bottom: 5px;
+    margin-bottom: 0.5rem;
 }
 
 section {
@@ -43,10 +43,37 @@ section {
 
 .socials {
     font-size: 2rem;
+    margin-bottom: 1rem;
 }
 
 .socials a {
     margin-right: 10px;
+}
+
+/* .skills h2 {
+    margin: 3rem 0;
+} */
+
+.skills {
+    text-align: center;
+}
+
+.skillset {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap:wrap;
+}
+
+.skill {
+    margin: 0 1rem;
+    width: 4.5rem;
+    text-align: center;
+}
+
+.skill-icon {
+    font-size: 3.5rem;
 }
 
 @media (min-width: 408px) {
@@ -59,7 +86,7 @@ section {
 @media (min-width: 992px) {
     .home {
         padding: 0;
-        justify-content: space-around;
+        justify-content: space-between;
     }
 
     .profile-pict {
@@ -68,6 +95,19 @@ section {
     }
 
     .intro {
-        margin-top: 3rem;
+        margin: 3rem 0 0 8rem;
+    }
+    .skills {
+        margin: 2rem auto;
+        max-width: 80%;
+    }
+    .skills h2 {
+        margin-bottom: 1rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .intro {
+        margin-left: 12rem;
     }
 }
