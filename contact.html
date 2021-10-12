@@ -32,7 +32,7 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
+                <li class="nav-item active">
                     <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item dropdown">
@@ -41,17 +41,17 @@
                         Portfolio
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Random Quote Generator</a>
-                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="quotes.html">Quote of the Day</a>
+                        <a class="dropdown-item" href="#">TBD</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Something else here</a>
+                        <a class="dropdown-item" href="#">TBD2</a>
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Travels</a>
+                    <a class="nav-link" href="#">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="#">Contact</a>
+                    <a class="nav-link" href="contact.html">Contact</a>
                 </li>
             </ul>
             <form class="form-inline my-2 my-lg-0">
@@ -59,7 +59,7 @@
             </form>
         </div>
     </nav>
-    <div class="container">
+    <div class="container min-vh-100">
         <h1>Contact Me!</h1>
         <div class="row card-wrapper">
             <aside class="card">
@@ -96,7 +96,7 @@
             <main class="card">
                 <div class="card-body">
                     <div class="container">
-                        <form>
+                        <form method="post">
                             <div class="form-group">
                                 <label for="your-name">Name</label>
                                 <input type="text" class="form-control" id="your-name" placeholder="Your Name">
@@ -115,6 +115,7 @@
                                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="15"
                                     placeholder="Write Your Message Here!"></textarea>
                             </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
                         </form>
                     </div>
                 </div>

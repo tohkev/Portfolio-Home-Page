@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hi, I'm Kevin Toh!</title>
+    <title>Random Quote Generator</title>
+    <!-- CSS Dependencies -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script defer src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -17,8 +18,10 @@
     <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="FontAwesome/css/all.css">
+    <!-- Website Dependencies -->
     <link rel="stylesheet" href="css/main-styles.css">
+    <link rel="stylesheet" href="css/quote-styles.css">
+    <script defer src="scripts/quotes.js"></script>
 </head>
 
 <body>
@@ -58,51 +61,19 @@
             </form>
         </div>
     </nav>
-    <main class="container min-vh-100">
-        <div class="container">
-            <section class="home row align-items-center">
-                <article class="intro">
-                    <div class="wrapper row justify-content-center">
-                        <div>
-                            <span class="greeting">Hello, I am </span>
-                            <h1 class="name">Kevin Toh</h1>
-                            <p>Aspiring Web Developer</p>
-                        </div>
-                        <div class="home-buttons">
-                            <a href="contact.html" class="btn btn-dark">Contact Me</a>
-                            <a href="#" class="btn btn-outline-dark">View My Profile</a>
-                        </div>
-                    </div>
-                    <div class="socials">
-                        <a href="" class="tw"><i class="fab fa-twitter"></i></i></a>
-                        <a href="" class="fb"><i class="fab fa-facebook-square"></i></a>
-                        <a href="" class="ig"><i class="fab fa-instagram"></i></a>
-                        <a href="" class="git"><i class="fab fa-github"></i></a>
-                    </div>
-                </article>
-                <article>
-                    <img src="/images/ktoh_pict.jpg" alt="Picture of me" class="profile-pict">
-                </article>
-            </section>
-            <section class="about-me row justify-content-center container">
-                <h2>About Me</h2>
-                <p class="biography">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate consequuntur
-                    quasi veniam ex
-                    nobis quod nihil. Quia molestiae ad accusantium, eveniet recusandae harum distinctio. Dolorum
-                    officiis dolore illum repudiandae magnam!
-                    Omnis praesentium ducimus laudantium aut, commodi magni, nulla explicabo tempore atque quam nesciunt
-                    laborum perspiciatis iusto. Maxime eaque praesentium dolores, excepturi harum vero numquam, labore,
-                    itaque quas error ipsa totam?
-                    Reiciendis eaque hic deleniti exercitationem labore nulla at suscipit optio consectetur, quasi
-                    corporis, provident nobis itaque! Labore quod vitae odio. Ratione quasi mollitia, dolore corrupti
-                    eveniet suscipit. Eos, reprehenderit eius.</p>
-            </section>
-            <section class="resume"></section>
-            <section class="portfolio"></section>
-            <section class="contact-me"></section>
+    <main class="container min-vh-100 d-flex flex-column align-items-center">
+        <h1>Quote of the Day</h1>
+        <div class="card w-50">
+            <div class="card-header">
+                Here is your quote:
+            </div>
+            <div class="card-body">
+                <h5 class="card-title" id="quote">Loading..</h5>
+                <p class="card-text"><span id="author"></span></p>
+                <a href="#" class="btn btn-primary" id="newQuote">New Quote</a>
+            </div>
         </div>
     </main>
-    <footer></footer>
 </body>
 
 </html>

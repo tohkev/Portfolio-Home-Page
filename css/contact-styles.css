@@ -44,9 +44,9 @@ iframe {
         justify-content: space-around;
     }
     aside.card {
-        width: 40%;
+        width: 30%;
     }
     main.card {
-        width: 55%;
+        width: 65%;
     }
 }
