@@ -76,6 +76,29 @@ section {
     font-size: 3.5rem;
 }
 
+footer {
+    background-color: rgb(52,58,64);
+    color: white;
+    text-align: center;
+}
+
+footer .socials {
+    padding-top: 1.5rem;
+}
+
+footer h2 {
+    font-size: 1.25rem;
+}
+
+footer p {
+    font-size: 0.75rem;
+    margin:0;
+}
+
+footer .icon {
+    color: white;
+}
+
 @media (min-width: 408px) {
     .wrapper {
         display: flex;
