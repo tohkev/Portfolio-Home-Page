@@ -5,3 +5,8 @@ main>h1 {
 p.card-text {
     font-style: italic;
 }
+
+.card {
+    width: 60%;
+    min-width: 50%;
+}

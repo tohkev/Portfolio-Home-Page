@@ -50,12 +50,9 @@ section {
     margin-right: 10px;
 }
 
-/* .skills h2 {
-    margin: 3rem 0;
-} */
-
 .skills {
     text-align: center;
+    padding-bottom: 3rem;
 }
 
 .skillset {
@@ -99,7 +96,7 @@ footer .icon {
     color: white;
 }
 
-@media (min-width: 408px) {
+@media (min-width: 390px) {
     .wrapper {
         display: flex;
         flex-direction: column;
