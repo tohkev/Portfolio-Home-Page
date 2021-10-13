@@ -6,5 +6,5 @@ Here are a list of technology and sources I used:
 * CSS
 * Boostrap
 * JavaScript
-* Icons from (FontAwesome)[https://fontawesome.com/]
-* (lukePeavey's Quote Generator API)[https://github.com/lukePeavey/quotable]
+* Icons from [FontAwesome](https://fontawesome.com/)
+* [lukePeavey's Quote Generator API](https://github.com/lukePeavey/quotable)
