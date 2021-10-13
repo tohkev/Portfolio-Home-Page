@@ -95,6 +95,9 @@ footer p {
 footer .icon {
     color: white;
 }
+footer .icon:hover {
+    color: black;
+}
 
 @media (min-width: 390px) {
     .wrapper {
