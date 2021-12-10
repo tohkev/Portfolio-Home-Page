@@ -1,5 +1,5 @@
 # My Portfolio Home Page!
-This is a portfolio page I made for myself and for my CIS192 final!
+Landing page for me and projects. Check it out!
 
 Here are a list of technology and sources I used:
 * HTML
