@@ -19,7 +19,7 @@
 }
 
 .description {
-    text-align: center;
+    text-align: start;
 }
 
 @media (min-width: 992px) {
