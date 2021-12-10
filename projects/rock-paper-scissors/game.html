@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Bootstrap Dependencies -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script defer src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="../../FontAwesome/css/all.css">
+  <!-- Website Dependencies -->
+  <link rel="stylesheet" href="../../css/main-styles.css">
+  <link rel="stylesheet" href="styles/main.css" />
+  <script defer src="scripts/script.js"></script>
+  <title>Rock, Paper, Scissors Monsters!</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="../../index.html">Kevin Toh</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="../../index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item dropdown active">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Portfolio
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="../random-quote/quotes.html">Quote of the Day</a>
+            <a class="dropdown-item" href="../etch-a-sketch/etch.html">Etch-a-Sketch</a>
+            <a class="dropdown-item" href="#">Rock-Paper-Scissors</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../../aboutme.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../../contact.html">Contact</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <button class="btn btn-light my-2 my-sm-0" type="submit">Download My Resume</button>
+      </form>
+    </div>
+  </nav>
+  <div class="container min-vh-100">
+    <header>
+      <h1>Welcome to the Arena, Champion!</h1>
+      <p>
+        Put your skills to the ultimate test! Choose a monster to fight for you
+        below and beat the computer!
+      </p>
+    </header>
+    <main>
+      <h2>Choose your monster by clicking on a button below!</h2>
+      <section class="main-container">
+        <div class="choices">
+          <figure>
+            <a href="#" class="choice"><img src="images/rock-monster.jpg" alt="Rock Monster" id="rock" /></a>
+            <figcaption>Rocky, the Mountain</figcaption>
+          </figure>
+        </div>
+        <div class="choices">
+          <figure>
+            <a href="#" class="choice"><img src="images/paper-monster.png" alt="Paper Monster" id="paper" /></a>
+            <figcaption>Paper, the Lightweight</figcaption>
+          </figure>
+        </div>
+        <div class="choices">
+          <figure>
+            <a href="#" class="choice"><img src="images/scissor-monster.png" alt="Scissors Monster" id="scissors" /></a>
+            <figcaption>Scissorman, He'll Cut You</figcaption>
+          </figure>
+        </div>
+      </section>
+      <section class="redo hide">
+        <button class="playAgain">Play Again?</button>
+      </section>
+      <section class="scoreboard">
+        <div class="row">
+          <div class="your-score">
+            <h2>Your Health:</h2>
+            <div class="lives your-health">
+              <img src="images/full-heart.png" alt="Full heart" />
+              <img src="images/full-heart.png" alt="Full heart" />
+              <img src="images/full-heart.png" alt="Full heart" />
+              <img src="images/full-heart.png" alt="Full heart" />
+              <img src="images/full-heart.png" alt="Full heart" />
+            </div>
+          </div>
+          <div class="middle">
+            <div class="round-block">
+              <h2>Round</h2>
+              <h3 id="round">1</h3>
+            </div>
+          </div>
+          <div class="cpu-score">
+            <h2>CPU Health:</h2>
+            <div class="lives cpu-health">
+              <img src="images/full-heart.png" alt="Full heart" />
+              <img src="images/full-heart.png" alt="Full heart" />
+              <img src="images/full-heart.png" alt="Full heart" />
+              <img src="images/full-heart.png" alt="Full heart" />
+              <img src="images/full-heart.png" alt="Full heart" />
+            </div>
+          </div>
+        </div>
+        <div class="log-block">
+          <p class="log">Actions are displayed here!</p>
+        </div>
+      </section>
+    </main>
+  </div>
+  <footer>
+    <div class="socials">
+      <a href="#" class="icon"><i class="fab fa-twitter"></i></i></a>
+      <a href="#" class="icon"><i class="fab fa-facebook-square"></i></a>
+      <a href="#" class="icon"><i class="fab fa-instagram"></i></a>
+      <a href="https://github.com/tohkev" class="icon"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/kevin-toh/" class="icon"><i class="fab fa-linkedin"></i></a>
+    </div>
+    <h2>Kevin Toh</h2>
+    <p>&copy; Copyright 2021.</p>
+    <p>All rights reserved. Powered by Github.</p>
+  </footer>
+</body>
+
+</html>
