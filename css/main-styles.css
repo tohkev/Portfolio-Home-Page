@@ -1,10 +1,33 @@
 
 body {
     background-color: #BFB5AF;
+    box-sizing: border-box;
 }
+
+section {
+    padding-top: 2rem;
+    width: 100%;
+}
+
+.margin-0 {
+    margin: 0;
+}
+
+section:nth-of-type(even) {
+    background-color: #f1f0f0;
+}
+
+hr {
+    width: 70%;
+    margin: 0 auto;
+    border-color: rgb(194, 194, 194);
+}
+
+/* ******************* HOME STYLES ******************************* */
 
 .container {
     background-color: white;
+    padding: 0;
 }
 
 .greeting {
@@ -14,31 +37,20 @@ body {
 
 .profile-pict {
     width: 100%;
-    margin-top: 1rem;
-    box-shadow: 0;
+    height: 23rem;
 }
 
 .home {
+    display: flex;
     justify-content: center;
-}
-
-.home-buttons button {
-    margin: 3px;
-}
-.home-buttons {
-    margin-bottom: 0.5rem;
-}
-
-section {
-    padding-top: 2rem;
-}
-
-.about-me {
-    text-align: center;
+    align-items: center;
+    height: 23rem;
 }
 
 .intro {
     text-align: center;
+    margin-left: 4rem;
+    margin-top: 1rem;
 }
 
 .socials {
@@ -50,29 +62,64 @@ section {
     margin-right: 10px;
 }
 
-.skills {
-    text-align: center;
-    padding-bottom: 3rem;
+.contact-text {
+    margin-left: 0.25rem;
 }
 
-.skillset {
-    list-style: none;
-    padding: 0;
+/* *********************** ABOUT ME STYLES *************************** */
+
+section.about-me {
+    padding: 3rem 0;
+}
+
+.about-me h2 {
+    text-align: center;
+}
+
+.about-me hr {
+    width: 20%;
+    margin-bottom: 1.5rem;
+}
+
+.about-me-text {
+    padding: 0 15rem;
+}
+
+.about-me-text > p {
+    margin-top: 1rem;
+}
+
+/* *********************** PROJECT STYLES *************************** */
+.project {
     display: flex;
-    justify-content: space-around;
-    flex-wrap:wrap;
+    justify-content: center;
 }
 
-.skill {
-    margin: 0 1rem;
-    width: 4.5rem;
-    text-align: center;
+.project hr {
+    width: 100%;
+    margin-bottom: 2rem;
 }
 
-.skill-icon {
-    font-size: 3.5rem;
+.project-context {
+    margin-right: 30rem;
 }
 
+.project-title {
+    margin-bottom: 1rem;
+}
+
+/* PROJECT 1 STYLES */
+p.card-text {
+    font-style: italic;
+}
+
+/* .card {
+    width: 60%;
+    min-width: 50%;
+} */
+
+
+/* *********************** FOOTER STYLES *************************** */
 footer {
     background-color: rgb(52,58,64);
     color: white;
@@ -117,9 +164,9 @@ footer .icon:hover {
         margin: 0;
     }
 
-    .intro {
+    /* .intro {
         margin: 3rem 0 0 8rem;
-    }
+    } */
     .skills {
         margin: 4rem auto;
         max-width: 80%;
@@ -129,8 +176,8 @@ footer .icon:hover {
     }
 }
 
-@media (min-width: 1200px) {
+/* @media (min-width: 1200px) {
     .intro {
         margin-left: 12rem;
     }
-}
+} */

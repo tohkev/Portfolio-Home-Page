@@ -26,7 +26,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark padding-x-10">
         <a class="navbar-brand" href="index.html">Kevin Toh</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,7 +34,7 @@
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
+            <ul class="navbar-nav mr-auto main-nav-list">
                 <li class="nav-item active">
                     <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                 </li>
@@ -56,72 +56,78 @@
                     <a class="nav-link" href="contact.html">Contact</a>
                 </li>
             </ul>
-            <a href="resume/Kevin Toh_Resume.pdf" class="my-2 my-lg-0" download>
+            <!-- <a href="resume/Kevin Toh_Resume.pdf" class="my-2 my-lg-0" download>
                 <button class="btn btn-light my-2 my-sm-0 resume-dl">Download My Resume</button>
-            </a>
+            </a> -->
         </div>
     </nav>
     <main class="container min-vh-100">
-        <section class="home row align-items-center">
+        <section class="home">
             <article class="intro">
                 <div class="wrapper row justify-content-center">
                     <div>
-                        <span class="greeting">Hello, I am </span>
                         <h1 class="name">Kevin Toh</h1>
-                        <p>Aspiring Software Developer</p>
-                    </div>
-                    <div class="home-buttons">
-                        <a href="contact.html" class="btn btn-dark">Contact Me</a>
-                        <a href="aboutme.html" class="btn btn-outline-dark">View My Profile</a>
+                        <p>Aspiring Software Developer
+                            <hr>
+                        </p>
                     </div>
                 </div>
                 <div class="socials">
-                    <a href="#" class="icon"><i class="fab fa-twitter"></i></i></a>
-                    <a href="#" class="icon"><i class="fab fa-facebook-square"></i></a>
-                    <a href="#" class="icon"><i class="fab fa-instagram"></i></a>
-                    <a href="https://github.com/tohkev" class="icon"><i class="fab fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/kevin-toh/" class="icon"><i
-                            class="fab fa-linkedin"></i></i></a>
+                    <a href="mailto:tohkev@gmail.com" class="icon"><button class="btn btn-outline-dark"><i
+                                class="far fa-envelope"></i><span class="contact-text">Email</span></button></a>
+                    <a href="https://github.com/tohkev" class="icon"><button class="btn btn-outline-dark"><i
+                                class="fab fa-github"></i><span class="contact-text">Github</span></button></i></a>
+                    <a href="https://www.linkedin.com/in/kevin-toh/" class="icon"><button
+                            class="btn btn-outline-dark"><i class="fab fa-linkedin"></i><span
+                                class="contact-text">LinkedIn</span></button></a>
+                    <a href="href=" resume/Kevin Toh_Resume.pdf" download" class="icon"><button
+                            class="btn btn-outline-dark"><i class="far fa-file-alt"></i><span
+                                class="contact-text">Resume</span></button></a>
                 </div>
             </article>
-            <article class="me">
-                <img src="/images/ktoh_pict.jpg" alt="Picture of me" class="profile-pict">
-            </article>
+            <figure class="margin-0">
+                <img src="/images/ktoh_pict.jpg" alt="Kevin Toh" class="profile-pict">
+            </figure>
         </section>
-        <section class="skills row justify-content-center container flex-column">
-            <h2>Skills</h2>
-            <ul class="skillset">
-                <li class="skill">
-                    <figure class="skill-icon">
-                        <i class="fab fa-html5"></i>
-                    </figure>
-                    <figcaption>HTML</figcaption>
-                </li>
-                <li class="skill">
-                    <figure class="skill-icon">
-                        <i class="fab fa-css3-alt"></i>
-                    </figure>
-                    <figcaption>CSS</figcaption>
-                </li>
-                <li class="skill">
-                    <figure class="skill-icon">
-                        <i class="fab fa-js-square"></i>
-                    </figure>
-                    <figcaption>JavaScript</figcaption>
-                </li>
-                <li class="skill">
-                    <figure class="skill-icon">
-                        <i class="fab fa-bootstrap"></i>
-                    </figure>
-                    <figcaption>Bootstrap</figcaption>
-                </li>
-                <li class="skill">
-                    <figure class="skill-icon">
-                        <i class="fab fa-python"></i>
-                    </figure>
-                    <figcaption>Python</figcaption>
-                </li>
-            </ul>
+        <section class="about-me">
+            <h2>About Me</h2>
+            <hr>
+            <article class="about-me-text">
+                <p>Hello! I am an aspiring software developer learning the ins and outs of
+                    programming
+                    through
+                    online resources like Udemy and from my local community college.</p>
+                <p>Above all else, I enjoy creating! Programming gives me that outlet to create and implement ideas that
+                    others
+                    may find entertaining with just a few taps on the keyboard. My free time is spent on learning new
+                    concepts, working out at the gym, and traveling! If you have any questions, please
+                    do not
+                    hesitate to reach out!</p>
+                </div>
+        </section>
+        <section class="project">
+            <div class="project-context">
+                <h4>Project</h4>
+                <hr>
+                <h2 class="project-title">Quote of the Day</h2>
+                <ul>
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                    <li>Item 3</li>
+                </ul>
+            </div>
+            <div class="project-display">
+                <div class="card">
+                    <div class="card-header">
+                        Here is your quote:
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title" id="quote">Loading..</h5>
+                        <p class="card-text"><span id="author"></span></p>
+                        <a href="#" class="btn btn-primary" id="newQuote">New Quote</a>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
     <footer>
