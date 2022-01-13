@@ -22,11 +22,13 @@
     <link rel="stylesheet" href="FontAwesome/css/all.css">
     <!-- Page Styles -->
     <link rel="stylesheet" href="css/main-styles.css">
-    <script defer src="scripts/download.js"></script>
+    <link rel="stylesheet" href="css/etch-styles.css">
+    <script defer src="scripts/quotes.js"></script>
+    <script defer src="scripts/etch-a-sketch.js"></script>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark padding-x-10">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="index.html">Kevin Toh</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,21 +36,24 @@
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto main-nav-list">
+            <ul class="navbar-nav ml-auto main-nav-list">
                 <li class="nav-item active">
                     <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item dropdown">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Projects <span class="sr-only"></span></a>
+                </li>
+                <!-- <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Portfolio
+                        Projects
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="projects/random-quote/quotes.html">Quote of the Day</a>
                         <a class="dropdown-item" href="projects/etch-a-sketch/etch.html">Etch-a-Sketch</a>
                         <a class="dropdown-item" href="projects/rock-paper-scissors/game.html">Rock-Paper-Scissors</a>
                     </div>
-                </li>
+                </li> -->
                 <li class="nav-item">
                     <a class="nav-link" href="aboutme.html">About</a>
                 </li>
@@ -61,16 +66,14 @@
             </a> -->
         </div>
     </nav>
-    <main class="container min-vh-100">
+    <main class="container min-vh-100 padding-0">
         <section class="home">
             <article class="intro">
-                <div class="wrapper row justify-content-center">
-                    <div>
-                        <h1 class="name">Kevin Toh</h1>
-                        <p>Aspiring Software Developer
-                            <hr>
-                        </p>
-                    </div>
+                <div>
+                    <h1 class="name">Kevin Toh</h1>
+                    <p>Aspiring Software Developer
+                        <hr>
+                    </p>
                 </div>
                 <div class="socials">
                     <a href="mailto:tohkev@gmail.com" class="icon"><button class="btn btn-outline-dark"><i
@@ -86,7 +89,7 @@
                 </div>
             </article>
             <figure class="margin-0">
-                <img src="/images/ktoh_pict.jpg" alt="Kevin Toh" class="profile-pict">
+                <img src="/images/ktoh_pict_square.jpg" alt="Kevin Toh" class="profile-pict">
             </figure>
         </section>
         <section class="about-me">
@@ -105,26 +108,63 @@
                     hesitate to reach out!</p>
                 </div>
         </section>
-        <section class="project">
-            <div class="project-context">
-                <h4>Project</h4>
-                <hr>
-                <h2 class="project-title">Quote of the Day</h2>
-                <ul>
-                    <li>Item 1</li>
-                    <li>Item 2</li>
-                    <li>Item 3</li>
-                </ul>
+        <section class="project-block">
+            <div class="project-header">
+                <h4>Projects</h4>
+                <div class="divider"></div>
             </div>
-            <div class="project-display">
-                <div class="card">
-                    <div class="card-header">
-                        Here is your quote:
+            <div class="project">
+                <div class="project-context">
+                    <div class="project-description">
+                        <h2 class="project-title">Quote of the Day</h2>
+                        <ul>
+                            <li>Item 1</li>
+                            <li>Item 2</li>
+                            <li>Item 3</li>
+                        </ul>
                     </div>
-                    <div class="card-body">
-                        <h5 class="card-title" id="quote">Loading..</h5>
-                        <p class="card-text"><span id="author"></span></p>
-                        <a href="#" class="btn btn-primary" id="newQuote">New Quote</a>
+                </div>
+                <div class="project-display">
+                    <div class="card">
+                        <div class="card-header">
+                            Here is your quote:
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title" id="quote">Loading..</h5>
+                            <p class="card-text"><span id="author"></span></p>
+                            <a href="#" class="btn btn-outline-primary" id="newQuote">New Quote</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="project-block">
+            <div class="project-header">
+                <h4>Projects</h4>
+                <div class="divider"></div>
+            </div>
+            <div class="project">
+                <div class="project-display">
+                    <p>Hover your mouse over the box below!</p>
+                    <div class="sketch d-flex justify-content-start">
+                        <section class="grid-block left"></section>
+                    </div>
+                </div>
+                <div class="project-context">
+                    <div class="project-description">
+                        <h2 class="project-title">Etch-a-Sketch!</h2>
+                        <ul>
+                            <li>Item 1</li>
+                            <li>Item 2</li>
+                            <li>Item 3</li>
+                        </ul>
+                        <div class="etch-control">
+                            <button class="btn btn-primary b-w">Black/White</button>
+                            <button class="btn btn-success rainbow-mode">Rainbow</button>
+                            <input type="range" name="size" id="size-slider" min="1" max="64" value="16" />
+                            <label for="size-slider" class="slider">16x16</label>
+                            <button class="new-grid-btn">Reset Sketch</button>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -1,16 +1,20 @@
-
 body {
     background-color: #BFB5AF;
     box-sizing: border-box;
 }
 
 section {
-    padding-top: 2rem;
+    padding: 2.5rem 0;
     width: 100%;
+    height: 24rem;
 }
 
 .margin-0 {
     margin: 0;
+}
+
+.padding-0 {
+    padding: 0;
 }
 
 section:nth-of-type(even) {
@@ -23,11 +27,23 @@ hr {
     border-color: rgb(194, 194, 194);
 }
 
+/* ******************* NAV BAR STYLES ******************************* */
+
+.navbar {
+    z-index: 100;
+    position: fixed;
+    width: 100%;
+    padding: 0.5rem 3rem;
+}
+
+nav li {
+    margin-right: 1rem;
+}
+
 /* ******************* HOME STYLES ******************************* */
 
 .container {
     background-color: white;
-    padding: 0;
 }
 
 .greeting {
@@ -37,20 +53,20 @@ hr {
 
 .profile-pict {
     width: 100%;
-    height: 23rem;
+    border-radius: 50%;
+    height: 25rem;
 }
 
 .home {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    height: 23rem;
+    box-sizing: content-box;
+    padding-top: 6rem;
 }
 
 .intro {
     text-align: center;
-    margin-left: 4rem;
-    margin-top: 1rem;
 }
 
 .socials {
@@ -59,7 +75,7 @@ hr {
 }
 
 .socials a {
-    margin-right: 10px;
+    margin-right: 0.25rem;
 }
 
 .contact-text {
@@ -69,7 +85,7 @@ hr {
 /* *********************** ABOUT ME STYLES *************************** */
 
 section.about-me {
-    padding: 3rem 0;
+    padding: 4rem;
 }
 
 .about-me h2 {
@@ -82,7 +98,7 @@ section.about-me {
 }
 
 .about-me-text {
-    padding: 0 15rem;
+    padding: 0 10rem;
 }
 
 .about-me-text > p {
@@ -90,22 +106,41 @@ section.about-me {
 }
 
 /* *********************** PROJECT STYLES *************************** */
-.project {
-    display: flex;
-    justify-content: center;
+.project-block {
+    padding: 3rem 7rem;
+    height: 30rem;
 }
 
-.project hr {
-    width: 100%;
-    margin-bottom: 2rem;
+.divider {
+    width: 20%;
+    margin-top: 0.5rem;
+    border-bottom: 1px solid rgb(214, 214, 214);
+}
+
+.project {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin-top: 3rem;
 }
 
 .project-context {
-    margin-right: 30rem;
+    width: 40%;
+}
+
+.project-display {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
 }
 
 .project-title {
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.project-description {
+    padding-left: 1rem;
 }
 
 /* PROJECT 1 STYLES */
@@ -113,10 +148,9 @@ p.card-text {
     font-style: italic;
 }
 
-/* .card {
-    width: 60%;
-    min-width: 50%;
-} */
+.card {
+    width: 80%;
+}
 
 
 /* *********************** FOOTER STYLES *************************** */
@@ -145,39 +179,3 @@ footer .icon {
 footer .icon:hover {
     color: black;
 }
-
-@media (min-width: 390px) {
-    .wrapper {
-        display: flex;
-        flex-direction: column;
-    }
-}
-
-@media (min-width: 992px) {
-    .home {
-        padding: 0;
-        justify-content: space-between;
-    }
-
-    .profile-pict {
-        border-radius: 210px 0 0 210px;
-        margin: 0;
-    }
-
-    /* .intro {
-        margin: 3rem 0 0 8rem;
-    } */
-    .skills {
-        margin: 4rem auto;
-        max-width: 80%;
-    }
-    .skills h2 {
-        margin-bottom: 1rem;
-    }
-}
-
-/* @media (min-width: 1200px) {
-    .intro {
-        margin-left: 12rem;
-    }
-} */
