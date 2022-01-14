@@ -1,5 +1,5 @@
 # My Portfolio Home Page!
-Landing page for me and projects. Check it out!
+Landing page for me and my projects. Check it out!
 
 Here are a list of technology and sources I used:
 * HTML
