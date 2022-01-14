@@ -1,12 +1,12 @@
 body {
-    background-color: #BFB5AF;
+    background-color: white;
     box-sizing: border-box;
 }
 
 section {
     padding: 2.5rem 0;
     width: 100%;
-    height: 24rem;
+    border-bottom: 2px solid #e4e4e4;
 }
 
 .margin-0 {
@@ -27,6 +27,12 @@ hr {
     border-color: rgb(194, 194, 194);
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 /* ******************* NAV BAR STYLES ******************************* */
 
 .navbar {
@@ -41,10 +47,6 @@ nav li {
 }
 
 /* ******************* HOME STYLES ******************************* */
-
-.container {
-    background-color: white;
-}
 
 .greeting {
     font-size: 1.3rem;
@@ -62,7 +64,7 @@ nav li {
     justify-content: space-evenly;
     align-items: center;
     box-sizing: content-box;
-    padding-top: 6rem;
+    padding-top: 4rem;
 }
 
 .intro {
@@ -84,44 +86,41 @@ nav li {
 
 /* *********************** ABOUT ME STYLES *************************** */
 
-section.about-me {
-    padding: 4rem;
+.about-me {
+    padding: 3rem 0rem;
+    line-height: 2rem;
 }
 
 .about-me h2 {
     text-align: center;
 }
 
-.about-me hr {
+.about-me > hr {
     width: 20%;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
 }
 
 .about-me-text {
-    padding: 0 10rem;
-}
-
-.about-me-text > p {
-    margin-top: 1rem;
+    padding: 0 15rem;
+    line-height: 2rem;
 }
 
 /* *********************** PROJECT STYLES *************************** */
 .project-block {
-    padding: 3rem 7rem;
-    height: 30rem;
+    padding: 2rem 5rem 5rem;
 }
 
 .divider {
     width: 20%;
     margin-top: 0.5rem;
-    border-bottom: 1px solid rgb(214, 214, 214);
+    border-bottom: 2px solid rgb(223, 223, 223);
 }
 
 .project {
     display: flex;
     justify-content: space-between;
     padding: 0;
-    margin-top: 3rem;
+    margin-top: 3.5rem;
 }
 
 .project-context {
@@ -152,6 +151,35 @@ p.card-text {
     width: 80%;
 }
 
+/* PROJECT 2 STYLES */
+
+.project-display:nth-of-type(1) {
+    align-items: start;
+    margin-right: 5rem;
+}
+
+.etch-control {
+    display: flex;
+    flex-direction: column;
+}
+
+.etch-option {
+    width: 40%;
+    font-weight: 600;
+}
+
+.rainbow-mode {
+    background: linear-gradient(45deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+    linear-gradient(180deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+    linear-gradient(315deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+    border: 2px solid black;
+}
+
+.rainbow-mode:hover {
+    background: linear-gradient(45deg, rgba(255,0,0,1), rgba(255,0,0,0) 70.71%),
+    linear-gradient(180deg, rgba(0,255,0,1), rgba(0,255,0,0) 70.71%),
+    linear-gradient(315deg, rgba(0,0,255,1), rgba(0,0,255,0) 70.71%);
+}
 
 /* *********************** FOOTER STYLES *************************** */
 footer {
