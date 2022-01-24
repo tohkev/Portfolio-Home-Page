@@ -206,6 +206,7 @@ p.card-text {
     justify-content: space-between;
     align-items: start;
     margin-top: 2rem;
+    padding: 2rem 5rem 5rem;
 }
 
 .contact--block .socials a {
