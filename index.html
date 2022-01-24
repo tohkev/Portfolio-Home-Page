@@ -54,53 +54,58 @@
         </div>
     </nav>
     <main class="min-vh-100 padding-0">
-        <section id="about" class="section-beginning">
-            <div class="home container">
-                <article class="intro">
-                    <div>
-                        <h1 class="name">Kevin Toh</h1>
-                        <p>Aspiring Software Developer
-                            <hr>
-                        </p>
-                    </div>
-                    <div class="socials">
-                        <a href="mailto:tohkev@gmail.com" class="icon"><button class="btn btn-outline-dark"><i
-                                    class="far fa-envelope"></i><span class="contact-text">Email</span></button></a>
-                        <a href="https://github.com/tohkev" class="icon"><button class="btn btn-outline-dark"><i
-                                    class="fab fa-github"></i><span class="contact-text">Github</span></button></i></a>
-                        <a href="https://www.linkedin.com/in/kevin-toh/" class="icon"><button
-                                class="btn btn-outline-dark"><i class="fab fa-linkedin"></i><span
-                                    class="contact-text">LinkedIn</span></button></a>
-                        <a href="href=" resume/Kevin Toh_Resume.pdf" download" class="icon"><button
-                                class="btn btn-outline-dark"><i class="far fa-file-alt"></i><span
-                                    class="contact-text">Resume</span></button></a>
-                    </div>
-                </article>
-                <figure class="margin-0">
-                    <img src="/images/ktoh_pict_square.jpg" alt="Kevin Toh" class="profile-pict">
-                </figure>
-            </div>
-        </section>
-        <section id="about" class="section-beginning">
-            <div class="container about-me">
-                <h2>About Me</h2>
-                <hr>
-                <article class="about-me-text">
-                    <p>Hello! I am an aspiring software developer learning the ins and outs of
-                        programming
-                        through
-                        online resources like Udemy and from my local community college.</p>
-                    <p>Above all else, I enjoy creating! Programming gives me that outlet to create and implement ideas
-                        that
-                        others
-                        may find entertaining with just a few taps on the keyboard. My free time is spent on learning
-                        new
-                        concepts, working out at the gym, and traveling! If you have any questions, please
-                        do not
-                        hesitate to reach out!</p>
-                </article>
-            </div>
-        </section>
+        <div id="about" class="section-beginning w-100">
+            <section>
+                <div class="home container" id="home">
+                    <article class="intro">
+                        <div>
+                            <h1 class="name">Kevin Toh</h1>
+                            <p>Aspiring Software Developer
+                                <hr>
+                            </p>
+                        </div>
+                        <div class="socials">
+                            <a href="mailto:tohkev@gmail.com" class="icon"><button class="btn btn-outline-dark"><i
+                                        class="far fa-envelope"></i><span class="contact-text">Email</span></button></a>
+                            <a href="https://github.com/tohkev" class="icon"><button class="btn btn-outline-dark"><i
+                                        class="fab fa-github"></i><span
+                                        class="contact-text">Github</span></button></i></a>
+                            <a href="https://www.linkedin.com/in/kevin-toh/" class="icon"><button
+                                    class="btn btn-outline-dark"><i class="fab fa-linkedin"></i><span
+                                        class="contact-text">LinkedIn</span></button></a>
+                            <a href="./resume/Kevin Toh_Resume.pdf" download" class="icon"><button
+                                    class="btn btn-outline-dark"><i class="far fa-file-alt"></i><span
+                                        class="contact-text">Resume</span></button></a>
+                        </div>
+                    </article>
+                    <figure class="margin-0">
+                        <img src="/images/ktoh_pict_square.jpg" alt="Kevin Toh" class="profile-pict">
+                    </figure>
+                </div>
+            </section>
+            <section>
+                <div class="container about-me" id="about-me">
+                    <h2>About Me</h2>
+                    <hr>
+                    <article class="about-me-text">
+                        <p>Hello! I am an aspiring software developer learning the ins and outs of
+                            programming
+                            through
+                            online resources like Udemy and from my local community college.</p>
+                        <p>Above all else, I enjoy creating! Programming gives me that outlet to create and implement
+                            ideas
+                            that
+                            others
+                            may find entertaining with just a few taps on the keyboard. My free time is spent on
+                            learning
+                            new
+                            concepts, working out at the gym, and traveling! If you have any questions, please
+                            do not
+                            hesitate to reach out!</p>
+                    </article>
+                </div>
+            </section>
+        </div>
         <div class="section-beginning wrapper" id="projects">
             <section>
                 <div class="container project-block">
@@ -113,9 +118,10 @@
                             <div class="project-description">
                                 <h2 class="project-title">Quote of the Day</h2>
                                 <ul>
-                                    <li>Item 1</li>
-                                    <li>Item 2</li>
-                                    <li>Item 3</li>
+                                    <li>Get a quote with a the click of a button!</li>
+                                    <li>Utilizes vanilla JavaScript and styles from Bootstrap</li>
+                                    <li><a href="https://github.com/lukePeavey/quotable">lukePeavey's Quote Generator
+                                            API</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -150,9 +156,9 @@
                             <div class="project-description">
                                 <h2 class="project-title">Etch-a-Sketch!</h2>
                                 <ul>
-                                    <li>Item 1</li>
-                                    <li>Item 2</li>
-                                    <li>Item 3</li>
+                                    <li>Choose an option below and hover over the squares on the left to etch your art!
+                                    </li>
+                                    <li>Utilizes vanilla JavaScript</li>
                                 </ul>
                                 <div class="etch-control">
                                     <button class="btn btn-dark b-w etch-option">Black/White</button>
@@ -169,24 +175,46 @@
             </section>
         </div>
         <section id="contact" class="section-beginning">
-            <div class="container contact-me">
-                <div class="contact-me-context">
-                    <h3>Contact Me!</h3>
-                    <p>You can contact me by clicking on one of the buttons on the right!</p>
+            <div class="container">
+                <div class="contact--block">
+                    <div class="contact--left">
+                        <h3 class="contact--heading">Contact Me</h3>
+                        <div class="contact--description">
+                            <p>Feel free to contact me by clicking on one of the buttons below.</p>
+                            <p>I enjoy traveling, eating, working out, and animating my drawings!</p>
+                        </div>
+                        <div class="socials">
+                            <a href="mailto:tohkev@gmail.com" class="icon"><button class="btn btn-outline-dark"><i
+                                        class="far fa-envelope"></i><span class="contact-text">Email</span></button></a>
+                            <a href="https://github.com/tohkev" class="icon"><button class="btn btn-outline-dark"><i
+                                        class="fab fa-github"></i><span
+                                        class="contact-text">Github</span></button></i></a>
+                            <a href="https://www.linkedin.com/in/kevin-toh/" class="icon"><button
+                                    class="btn btn-outline-dark"><i class="fab fa-linkedin"></i><span
+                                        class="contact-text">LinkedIn</span></button></a>
+                            <a href="./resume/Kevin Toh_Resume.pdf" download" class="icon"><button
+                                    class="btn btn-outline-dark"><i class="far fa-file-alt"></i><span
+                                        class="contact-text">Resume</span></button></a>
+                        </div>
+                    </div>
+
+                    <div class="contact--right">
+                        <figure class="contact--drawing">
+                            <img src="./images/ktoh-dance.gif" alt="Bernie animation">
+                        </figure>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
     <footer>
-        <div class="socials">
-            <a href="#" class="icon"><i class="fab fa-twitter"></i></i></a>
-            <a href="#" class="icon"><i class="fab fa-facebook-square"></i></a>
-            <a href="#" class="icon"><i class="fab fa-instagram"></i></a>
-            <a href="https://github.com/tohkev" class="icon"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/kevin-toh/" class="icon"><i class="fab fa-linkedin"></i></a>
+        <div class="footer-nav container">
+            <a href="#home" class="icon">Home</a> <span class="break">•</span>
+            <a href="#about-me" class="icon">About</a> <span class="break">•</span>
+            <a href="#projects" class="icon">Projects</i></a> <span class="break">•</span>
+            <a href="#contact" class="icon">Contact</i></a>
         </div>
-        <h2>Kevin Toh</h2>
-        <p>&copy; Copyright 2021.</p>
+        <p>&copy; Kevin Toh Copyright 2021-2022.</p>
         <p>All rights reserved. Powered by Github.</p>
     </footer>
 </body>
