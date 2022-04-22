@@ -121,7 +121,7 @@ button.navbar-toggler {
 }
 
 .project-block {
-	padding: 2rem 5rem 3rem;
+	padding: 2rem 4.5rem 3rem;
 }
 
 .divider {
@@ -144,9 +144,10 @@ button.navbar-toggler {
 .project-display {
 	width: 60%;
 	display: flex;
-	flex-direction: column;
-	align-items: end;
-	text-align: end;
+}
+
+.project-display-end {
+	text-align: right;
 }
 
 .project-title {
