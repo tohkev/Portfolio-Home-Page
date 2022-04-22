@@ -260,7 +260,7 @@ footer {
 
 .footer-nav {
 	margin-bottom: 2rem;
-	text-align: start;
+	text-align: center;
 }
 
 .footer-nav > a {
@@ -308,7 +308,7 @@ footer p {
 	.socials {
 		display: flex;
 		flex-wrap: wrap;
-		justify-content: center;
+		justify-content: start;
 	}
 
 	.socials a button {
@@ -350,6 +350,7 @@ footer p {
 
 	.socials {
 		font-size: 0.5vmin;
+		justify-content: center;
 	}
 
 	.socials > a {
@@ -429,5 +430,23 @@ footer p {
 	.home > figure {
 		order: -1;
 		margin-bottom: 1rem;
+	}
+
+	.about-me-text {
+		padding: 0 3rem;
+	}
+
+	.socials > a {
+		width: 33.3%;
+	}
+
+	.contact--heading {
+		width: 80%;
+		margin: 1.25rem auto 0;
+		text-align: center;
+	}
+
+	.contact--description {
+		margin: 1.5rem 0;
 	}
 }
