@@ -60,7 +60,7 @@
                     <article class="intro">
                         <div>
                             <h1 class="name">Kevin Toh</h1>
-                            <p class="title">Aspiring Software Developer
+                            <p class="title">Aspiring Software Developer >
                                 <hr>
                             </p>
                         </div>
@@ -159,14 +159,14 @@
                     </div>
                 </div>
             </section>
-            <section>
+            <section class="hide-mobile">
                 <div class="container project-block">
                     <div class="project-header">
                         <h4>Projects</h4>
                         <div class="divider"></div>
                     </div>
                     <div class="project">
-                        <div class="project-display">
+                        <div class="project-display etch-display">
                             <div class="sketch d-flex justify-content-start">
                                 <section class="grid-block left"></section>
                             </div>
@@ -177,13 +177,13 @@
                                 <ul>
                                     <li>Choose an option below and hover over the squares on the left to etch your art!
                                     </li>
-                                    <li>Utilizes vanilla JavaScript</li>
+                                    <li>Utilizes vanilla JavaScript to generate a color on the grid when hovered over.</li>
                                 </ul>
                                 <div class="etch-control">
                                     <button class="btn btn-dark b-w etch-option">Black/White</button>
                                     <button class="btn rainbow-mode etch-option">Rainbow</button>
-                                    <input type="range" name="size" id="size-slider" min="1" max="64" value="16" />
-                                    <label for="size-slider" class="slider etch-option">16x16</label>
+                                    <input type="range" name="size" id="size-slider" min="1" max="64" value="16" class="etch-slider" />
+                                    <label for="size-slider" class="slider">16x16</label>
                                     <button class="btn btn-outline-secondary new-grid-btn etch-option">Reset
                                         Sketch</button>
                                 </div>
