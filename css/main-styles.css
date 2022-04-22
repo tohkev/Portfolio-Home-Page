@@ -361,17 +361,18 @@ footer p {
 	.socials {
 		font-size: 0.5vmin;
 		justify-content: center;
+		text-align: center;
 	}
 
 	.socials > a {
-		width: 33.3%;
+		width: 7rem;
 	}
 
 	.socials > a > button {
 		margin-bottom: 0.75rem;
 		padding: 0.5rem 1rem;
 		box-sizing: border-box;
-		width: 7rem;
+		width: 100%;
 	}
 
 	.project {
@@ -428,7 +429,7 @@ footer p {
 	}
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
 	.hide-mobile {
 		display: none;
 	}
@@ -452,6 +453,14 @@ footer p {
 
 	.socials > a {
 		width: 33.3%;
+	}
+
+	.contact--block {
+		justify-content: center;
+	}
+
+	.contact--left {
+		margin-right: 0;
 	}
 
 	.contact--heading {
